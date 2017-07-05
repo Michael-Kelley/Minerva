@@ -1,0 +1,1 @@
+Make sure to change the MSSQL DB details in Program.cs (connection string)

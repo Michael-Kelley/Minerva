@@ -1,0 +1,2 @@
+This is an attempt at a CABAL Online emulator that I started writing many years ago. It is for a very outdated client, and was nowhere near being finished. In fact, I only really got as far as getting the client ingame and being able to move around and talk.  
+It is here just for reference.

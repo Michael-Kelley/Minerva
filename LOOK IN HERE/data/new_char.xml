@@ -1,0 +1,394 @@
+<cabal>
+	<!-- This file defines default items, skills and quickslots of newly-created characters -->
+	<init>
+		<!--
+			<item> elements have a fair few attributes you can set.  They are as follows:
+			REQUIRED:
+				class: The character class this item should be given to.
+				id: The item ID.
+				slot: The inventory slot to put the item in.
+			OPTIONAL:
+				amount: The amount of items to give the player.
+				bonus: The bonus of the item (+1, +7, etc.).
+				is_bound: Whether or not this item is account-bound (0 = false, 1 = true)			
+				upgrades: The number of upgrade slots this item has.
+				upgrade_x: The upgrade in slot x (where x = 1, 2, 3, or 4).
+				craft_type: The type of this item's craft.
+				craft_bonus: The bonus provided by this item's craft.
+				expiration: The expiration type of this item.
+		-->
+		<!-- HP Potions, All -->
+		<item
+			class="-1"
+			id="3"
+			amount="5"
+			slot="0" />
+		<!-- MP Potions, All -->			
+		<item
+			class="-1"
+			id="6"
+			amount="5"
+			slot="1" />
+		<!-- Training Armourhelm, Warrior -->			
+		<item
+			class="1"
+			id="240"
+			slot="2" />
+		<!-- Training Martialhelm, Blader -->			
+		<item
+			class="2"
+			id="270"
+			slot="2" />
+		<!-- Training Martialhelm, Wizard -->			
+		<item
+			class="3"
+			id="270"
+			slot="2" />
+		<!-- Training Battlehelm, Force Archer -->			
+		<item
+			class="4"
+			id="255"
+			slot="2" />
+		<!-- Training Armourhelm, Force Shielder -->			
+		<item
+			class="5"
+			id="240"
+			slot="2" />
+		<!-- Training Battlehelm, Force Blader -->			
+		<item
+			class="6"
+			id="255"
+			slot="2" />
+		
+		<!--
+			class: The character class this skill should be given to.
+			id: The skill ID.
+			level: The level of the skill.
+			slot: The skill slot to put this skill in (sword skills start at 0, magic at 32).
+		-->
+		<!-- Battle Aura, All -->	
+		<skill
+			class="-1"
+			id="333"
+			level="1"
+			slot="70" />
+		<!-- Impact Stab, Warrior -->	
+		<skill
+			class="1"
+			id="2"
+			level="1"
+			slot="0" />
+		<!-- Berserker, Warrior -->	
+		<skill
+			class="1"
+			id="340"
+			level="1"
+			slot="72" />
+		<!-- Lancer, Warrior -->	
+		<skill
+			class="1"
+			id="341"
+			level="1"
+			slot="73" />
+		<!-- Lance Drive, Warrior -->	
+		<skill
+			class="1"
+			id="400"
+			level="1"
+			slot="75" />
+		<!-- _, Warrior -->	
+		<skill
+			class="1"
+			id="380"
+			level="1"
+			slot="78" />
+		<!-- _, Warrior -->	
+		<skill
+			class="1"
+			id="381"
+			level="1"
+			slot="79" />
+		<!-- _, Warrior -->	
+		<skill
+			class="1"
+			id="382"
+			level="1"
+			slot="80" />
+		<!-- _, Warrior -->	
+		<skill
+			class="1"
+			id="383"
+			level="1"
+			slot="81" />
+		<!-- Impact Stab, Blader -->	
+		<skill
+			class="2"
+			id="2"
+			level="1"
+			slot="0" />
+		<!-- Illusionist, Blader -->	
+		<skill
+			class="2"
+			id="342"
+			level="1"
+			slot="72" />
+		<!-- Grappler, Blader -->	
+		<skill
+			class="2"
+			id="343"
+			level="1"
+			slot="73" />
+		<!-- Crushing Blow, Blader -->	
+		<skill
+			class="2"
+			id="402"
+			level="1"
+			slot="75" />
+		<!-- _, Blader -->	
+		<skill
+			class="2"
+			id="384"
+			level="1"
+			slot="78" />
+		<!-- _, Blader -->	
+		<skill
+			class="2"
+			id="385"
+			level="1"
+			slot="79" />
+		<!-- _, Blader -->	
+		<skill
+			class="2"
+			id="386"
+			level="1"
+			slot="80" />
+		<!-- _, Blader -->	
+		<skill
+			class="2"
+			id="387"
+			level="1"
+			slot="81" />
+		<!-- Magic Arrow, Wizard -->	
+		<skill
+			class="3"
+			id="100"
+			level="1"
+			slot="32" />
+		<!-- Chain Caster, Wizard -->	
+		<skill
+			class="3"
+			id="344"
+			level="1"
+			slot="72" />
+		<!-- Double Caster, Wizard -->	
+		<skill
+			class="3"
+			id="345"
+			level="1"
+			slot="73" />
+		<!-- Elemental Festival, Wizard -->	
+		<skill
+			class="3"
+			id="404"
+			level="1"
+			slot="75" />
+		<!-- Magic Arrow, Force Archer -->	
+		<skill
+			class="4"
+			id="424"
+			level="1"
+			slot="32" />
+		<!-- Astral Bow, Force Archer -->	
+		<skill
+			class="4"
+			id="331"
+			level="1"
+			slot="67" />
+		<!-- Multi Shooter, Force Archer -->	
+		<skill
+			class="4"
+			id="346"
+			level="1"
+			slot="72" />
+		<!-- Twin Gunner, Force Archer -->	
+		<skill
+			class="4"
+			id="347"
+			level="1"
+			slot="73" />
+		<!-- Fatal Shot, Force Archer -->	
+		<skill
+			class="4"
+			id="406"
+			level="1"
+			slot="75" />
+		<!-- _, Force Archer -->	
+		<skill
+			class="4"
+			id="391"
+			level="1"
+			slot="78" />
+		<!-- _, Force Archer -->	
+		<skill
+			class="4"
+			id="392"
+			level="1"
+			slot="79" />
+		<!-- _, Force Archer -->	
+		<skill
+			class="4"
+			id="393"
+			level="1"
+			slot="80" />
+		<!-- _, Force Archer -->	
+		<skill
+			class="4"
+			id="394"
+			level="1"
+			slot="81" />
+		<!-- Impact Stab, Force Shielder -->	
+		<skill
+			class="5"
+			id="2"
+			level="1"
+			slot="0" />
+		<!-- Astral Shield, Force Shielder -->	
+		<skill
+			class="5"
+			id="332"
+			level="1"
+			slot="67" />
+		<!-- Counter Attacker, Force Shielder -->	
+		<skill
+			class="5"
+			id="348"
+			level="1"
+			slot="72" />
+		<!-- Shield Master, Force Shielder -->	
+		<skill
+			class="5"
+			id="349"
+			level="1"
+			slot="73" />
+			<!-- Shield Storm, Force Shielder -->	
+		<skill
+			class="5"
+			id="408"
+			level="1"
+			slot="75" />
+		<!-- _, Force Shielder -->	
+		<skill
+			class="5"
+			id="388"
+			level="1"
+			slot="78" />
+		<!-- _, Force Shielder -->	
+		<skill
+			class="5"
+			id="389"
+			level="1"
+			slot="79" />
+		<!-- _, Force Shielder -->	
+		<skill
+			class="5"
+			id="390"
+			level="1"
+			slot="80" />
+		<!-- Impact Stab, Force Blader -->	
+		<skill
+			class="6"
+			id="2"
+			level="1"
+			slot="0" />
+		<!-- Magic Arrow, Force Blader -->	
+		<skill
+			class="6"
+			id="100"
+			level="1"
+			slot="32" />
+		<!-- Force Enchanter, Force Blader -->	
+		<skill
+			class="6"
+			id="350"
+			level="1"
+			slot="72" />
+		<!-- Blade Shooter, Force Blader -->	
+		<skill
+			class="6"
+			id="351"
+			level="1"
+			slot="73" />
+		<!-- Prismatic Blade-Cannon, Force Blader -->	
+		<skill
+			class="6"
+			id="410"
+			level="1"
+			slot="75" />
+		
+		<!--
+			class: The character class this quickslot should be given to.
+			id: The skill ID (referenced by skill slot ID).
+			slot: The quickbar slot to put this quickslot in.
+		-->	
+		<!-- Normal Attack, All -->
+		<quickslot
+			class="-1"
+			id="132"
+			slot="0" />
+		<!-- Use an HP Potion, All -->
+		<quickslot
+			class="-1"
+			id="128"
+			slot="10" />
+		<!-- Use an MP Potion, All -->
+		<quickslot
+			class="-1"
+			id="129"
+			slot="11" />
+		<!-- Impact Stab, Warrior -->
+		<quickslot
+			class="1"
+			id="0"
+			slot="1" />
+		<!-- Impact Stab, Blader -->
+		<quickslot
+			class="2"
+			id="0"
+			slot="1" />
+		<!-- Magic Arrow, Wizard -->
+		<quickslot
+			class="3"
+			id="32"
+			slot="1" />
+		<!-- Magic Arrow, Force Archer -->
+		<quickslot
+			class="4"
+			id="32"
+			slot="1" />
+		<!-- Astral Bow, Force Archer -->
+		<quickslot
+			class="4"
+			id="67"
+			slot="2" />
+		<!-- Impact Stab, Force Shielder -->
+		<quickslot
+			class="5"
+			id="0"
+			slot="1" />
+		<!-- Astral Shield, Force Shielder -->
+		<quickslot
+			class="5"
+			id="67"
+			slot="3" />
+		<!-- Impact Stab, Force Blader -->
+		<quickslot
+			class="6"
+			id="0"
+			slot="1" />
+		<!-- Magic Arrow, Force Blader -->
+		<quickslot
+			class="6"
+			id="32"
+			slot="2" />
+	</init>
+</cabal>

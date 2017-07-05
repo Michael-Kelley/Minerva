@@ -1,0 +1,23 @@
+typedef enum <byte> {
+  LOGIN,
+  WORLD,
+  CHAT
+} Daemon;
+
+typedef enum <byte> {
+  OUTGOING,
+  INCOMING
+} Direction;
+
+typedef struct {
+  Daemon daemon;
+  time_t time;
+  Direction direction;
+  ubyte opcode_length;
+  char opcode[opcode_length];
+  ushort data_length;
+  ubyte data[data_length];
+} Packet;
+
+int packet_count;
+Packet packets[packet_count] <optimize=false>;
